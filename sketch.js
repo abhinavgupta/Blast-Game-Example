@@ -112,7 +112,7 @@ class Attack {
   }
 
   offScreen() {
-    return this.x > 80;
+    return this.x > windowWidth;
   }
 }
 
