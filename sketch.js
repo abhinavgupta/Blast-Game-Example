@@ -22,7 +22,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   imageMode(CENTER);
   for (let i = 0; i < 10; i++) {
@@ -90,6 +90,10 @@ function mousePressed() {
   if (attacks.length == 0) {
     attacks.push(new Attack(mouseX, mouseY, speed_l));
   }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 class Attack {
