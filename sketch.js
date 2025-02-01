@@ -37,10 +37,10 @@ function draw() {
     fill(255, 0, 0);
     textFont(gameFont, 25);
     textAlign(CENTER, CENTER);
-    text("GAME OVER: PAY EXTRA TAX", 400, 400);
+    text("GAME OVER: PAY EXTRA TAX", windowWidth/2, windowHeight/2);
     textFont(gameFont, 25);
     textAlign(CENTER, BOTTOM);
-    text("FINAL SCORE: " + score, 400, 600);
+    text("FINAL SCORE: " + score, windowWidth/2, windowHeight/2 + 300);
   } else if (lives > 0) {
     fill(255, 0, 0);
     textFont(gameFont, 12);
