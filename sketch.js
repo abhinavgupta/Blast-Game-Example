@@ -56,7 +56,7 @@ function draw() {
 
       if (planes[i].offScreen()) {
         planes.splice(i, 1);
-        planes.push(new Plane(750, random(100, 700), speed_r));
+        planes.push(new Plane(windowWidth - 50, random(50, windowHeight - 50), speed_r));
         lives--;
       }
 
@@ -67,7 +67,7 @@ function draw() {
         let d = abs(dist(planes[i].x, planes[i].y, attacks[0].x, attacks[0].y));
         if (d < 100) {
           planes.splice(i, 1);
-          planes.push(new Plane(750, random(100, 700), speed_r));
+          planes.push(new Plane(windowWidth - 50, random(50, windowHeight - 50), speed_r));
           attacks.splice(0, 1);
           score++;
           if (score % 10 == 0) {
