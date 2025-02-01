@@ -8,7 +8,7 @@ let nirmala;
 let vegeta;
 let score = 0;
 let lives = 5;
-let speed_l = 1;
+let speed_l = 3;
 let speed_r = -1;
 let gameFont;
 
