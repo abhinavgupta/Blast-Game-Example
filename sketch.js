@@ -26,7 +26,7 @@ function setup() {
   angleMode(DEGREES);
   imageMode(CENTER);
   for (let i = 0; i < 10; i++) {
-    planes.push(new Plane(windowWidth - 50, random(100, windowHeight - 100), speed_r));
+    planes.push(new Plane(windowWidth - 50, random(50, windowHeight - 50), speed_r));
   }
 }
 
