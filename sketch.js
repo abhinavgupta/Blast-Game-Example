@@ -112,7 +112,7 @@ class Attack {
   }
 
   offScreen() {
-    return this.x > 800 || this.x < 0;
+    return this.x < 0;
   }
 }
 
